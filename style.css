@@ -1,0 +1,125 @@
+/* -----------------------------
+        Global styles
+----------------------------- */
+
+:root {
+    /* Palette */
+    --color-black: hsl(0, 0%, 25%);
+    --color-white: hsl(0, 0%, 99%);
+    --accent-color: deeppink;
+    --accent-color--light: hsl(328, 100%, 70%);
+
+    /* Elements colors */
+    --text-color: var(--color-black);
+    --link-color: var(--accent-color);
+    --link-color--hover: var(--accent-color--light);
+    --background-color: var(--color-black);
+    --main-background-color: var(--color-white);
+
+    /* Layout */
+    --page-margins: 40px;
+    --page-width: 1200px;
+    --text-width: 35rem;
+
+    /* Typography */
+    /* Base font size become 18px */
+    font-size: 112.5%;
+    --font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    overflow-wrap: break-word;
+    /* hyphens: auto; */
+}
+
+html,
+body {
+    height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* -----------------------------
+            Typography          
+----------------------------- */
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    accent-color: var(--accent-color);
+    line-height: 1.5;
+    font-size: 1rem;
+    font-family: var(--font-family);
+    -webkit-font-smoothing: antialiased;
+    /* for MACs */
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a {
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--link-color--hover);
+}
+
+h1 {
+    letter-spacing: -0.04rem;
+    padding-bottom: 0.2em;
+}
+
+h2 {
+    letter-spacing: -0.03rem;
+    padding-bottom: 0.4em;
+}
+
+h3 {
+    letter-spacing: -0.02rem;
+}
+
+p {
+    max-width: var(--text-width);
+    padding-bottom: 1em;
+}
+
+p:last-child {
+    padding-bottom: 0;
+}
+
+/* 
+em {}
+
+strong {} 
+*/
+
+/* -----------------------------
+            Layout          
+----------------------------- */
+
+main {
+    max-width: var(--page-width);
+    margin: 0 auto;
+    background-color: var(--main-background-color);
+    padding: 2rem var(--page-margins) 1.7rem var(--page-margins);
+
+}
