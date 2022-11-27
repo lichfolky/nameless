@@ -9,6 +9,13 @@
 
 */
 
+/*Web safe fonts with good support (https://www.cssfontstack.com/):*/
+/*font-family: Arial, Helvetica, sans-serif;*/
+/*font-family: 'Courier New', Courier, monospace;*/
+/*font-family: Georgia, 'Times New Roman', Times, serif;*/
+/*font-family: 'Times New Roman', Times, serif;*/
+/*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
+/*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
 
 /*  -----------------------------------
         Custom properties  [#CUST]        
@@ -27,16 +34,23 @@
     --link-color--hover: var(--accent-color--light);
     --background-color: var(--color-black);
     --main-background-color: var(--color-white);
-
     /* Layout */
     --page-margins: 2rem 40px 1.7rem 40px;
-    --page-width: 1200px;
+
+    /*
+        1240px * 545px Macbook Pro Retina, 13-inch
+        1040px * huawei Matebook
+        --page-width: 1200px;
+    */
+    --page-width: 1000px;
     --text-width: 35rem;
 
     /* Typography */
     /* Base font size become 18px */
     font-size: 112.5%;
     --font-family: Georgia, 'Times New Roman', Times, serif;
+
+
 }
 
 /*  -----------------------------------
