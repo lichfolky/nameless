@@ -1,10 +1,32 @@
-/* -----------------------------
-        Global styles
------------------------------ */
+/* 
+
+
+▀█▄   ▀█▀                            ▀██                        
+ █▀█   █   ▄▄▄▄   ▄▄ ▄▄ ▄▄     ▄▄▄▄   ██    ▄▄▄▄   ▄▄▄▄   ▄▄▄▄  
+ █ ▀█▄ █  ▀▀ ▄██   ██ ██ ██  ▄█▄▄▄██  ██  ▄█▄▄▄██ ██▄ ▀  ██▄ ▀  
+ █   ███  ▄█▀ ██   ██ ██ ██  ██       ██  ██      ▄ ▀█▄▄ ▄ ▀█▄▄ 
+▄█▄   ▀█  ▀█▄▄▀█▀ ▄██ ██ ██▄  ▀█▄▄▄▀ ▄██▄  ▀█▄▄▄▀ █▀▄▄█▀ █▀▄▄█▀ 
+                
+
+A basic htlm template with basic resets and my favorite initial setup.
+
+----------- INDEX -----------
+* Custom properties  [#CUST]
+* Global resets      [#GRES]
+* Layout             [#LAYO] 
+* Typography         [#TYPO]  
+-----------------------------
+
+*/
+
+
+/*  -----------------------------------
+        Custom properties  [#CUST]        
+-----------------------------------  */
 
 :root {
     /* Palette */
-    --color-black: hsl(0, 0%, 25%);
+    --color-black: hsl(0, 0%, 5%);
     --color-white: hsl(0, 0%, 99%);
     --accent-color: deeppink;
     --accent-color--light: hsl(328, 100%, 70%);
@@ -17,7 +39,7 @@
     --main-background-color: var(--color-white);
 
     /* Layout */
-    --page-margins: 40px;
+    --page-margins: 2rem 40px 1.7rem 40px;
     --page-width: 1200px;
     --text-width: 35rem;
 
@@ -26,6 +48,10 @@
     font-size: 112.5%;
     --font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+/*  -----------------------------------
+        Global resets [#GRES]        
+-----------------------------------  */
 
 *,
 *::before,
@@ -53,9 +79,20 @@ svg {
     max-width: 100%;
 }
 
-/* -----------------------------
-            Typography          
------------------------------ */
+/*  -----------------------------------
+        Layout  [#LAYO]         
+-----------------------------------  */
+
+main {
+    max-width: var(--page-width);
+    margin: 0 auto;
+    background-color: var(--main-background-color);
+    padding: var(--page-margins);
+}
+
+/*  -----------------------------------
+        Typography  [#TYPO]         
+-----------------------------------  */
 
 body {
     background-color: var(--background-color);
@@ -111,15 +148,3 @@ em {}
 
 strong {} 
 */
-
-/* -----------------------------
-            Layout          
------------------------------ */
-
-main {
-    max-width: var(--page-width);
-    margin: 0 auto;
-    background-color: var(--main-background-color);
-    padding: 2rem var(--page-margins) 1.7rem var(--page-margins);
-
-}
