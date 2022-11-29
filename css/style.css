@@ -35,7 +35,8 @@
     --background-color: var(--color-black);
     --main-background-color: var(--color-white);
     /* Layout */
-    --page-margins: 2rem 40px 1.7rem 40px;
+    --page-padding: 2rem 40px 1.7rem 40px;
+    --page-margin: 2rem auto;
 
     /*
         1240px * 545px Macbook Pro Retina, 13-inch
@@ -49,8 +50,6 @@
     /* Base font size become 18px */
     font-size: 112.5%;
     --font-family: Georgia, 'Times New Roman', Times, serif;
-
-
 }
 
 /*  -----------------------------------
@@ -89,9 +88,9 @@ svg {
 
 main {
     max-width: var(--page-width);
-    margin: 0 auto;
     background-color: var(--main-background-color);
-    padding: var(--page-margins);
+    padding: var(--page-padding);
+    margin: var(--page-margin);
 }
 
 /*  -----------------------------------
