@@ -25,15 +25,15 @@
     /* Palette */
     --color-black: hsl(0, 0%, 5%);
     --color-white: hsl(0, 0%, 99%);
-    --accent-color: deeppink;
-    --accent-color--light: hsl(328, 100%, 70%);
+    --color-accent: deeppink;
+    --color-accent--light: hsl(328, 100%, 70%);
 
     /* Elements colors */
-    --text-color: var(--color-black);
-    --link-color: var(--accent-color);
-    --link-color--hover: var(--accent-color--light);
-    --background-color: var(--color-black);
-    --main-background-color: var(--color-white);
+    --color-text: var(--color-black);
+    --color-link: var(--color-accent);
+    --color-link--hover: var(--color-accent--light);
+    --color-background: var(--color-black);
+    --color-main-background: var(--color-white);
     /* Layout */
     --page-padding: 2rem 40px 1.7rem 40px;
     --page-margin: 2rem auto;
@@ -88,7 +88,7 @@ svg {
 
 main {
     max-width: var(--page-width);
-    background-color: var(--main-background-color);
+    background-color: var(--color-main-background);
     padding: var(--page-padding);
     margin: var(--page-margin);
 }
@@ -98,9 +98,9 @@ main {
 -----------------------------------  */
 
 body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    accent-color: var(--accent-color);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    accent-color: var(--color-accent);
     line-height: 1.5;
     font-size: 1rem;
     font-family: var(--font-family);
@@ -116,11 +116,11 @@ select {
 }
 
 a {
-    color: var(--link-color);
+    color: var(--color-link);
 }
 
 a:hover {
-    color: var(--link-color--hover);
+    color: var(--color-link--hover);
 }
 
 h1 {
