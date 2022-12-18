@@ -5,6 +5,7 @@
 * Global resets      [#GRES]
 * Layout             [#LAYO] 
 * Typography         [#TYPO]  
+* Utility classes    [#UTIL]        
 -----------------------------
 
 */
@@ -34,19 +35,19 @@
     --color-link--hover: var(--color-accent--light);
     --color-background: var(--color-black);
     --color-main-background: var(--color-white);
+        
     /* Layout */
     --page-padding: 2rem 40px 1.7rem 40px;
     --page-margin: 2rem auto;
 
     /*
-        1240px * 545px Macbook Pro Retina, 13-inch
-        1040px * huawei Matebook
-        --page-width: 1200px;
+          1366px * 768px
     */
-    --page-width: 1000px;
-    --text-width: 35rem;
+    --page-width: 1366px;
+    --text-width: 40rem;
 
     /* Typography */
+        
     /* Base font size become 18px */
     font-size: 112.5%;
     --font-family: Georgia, 'Times New Roman', Times, serif;
@@ -101,11 +102,12 @@ body {
     background-color: var(--color-background);
     color: var(--color-text);
     accent-color: var(--color-accent);
+    font-family: var(--font-family);
+    /* for MACs */
+    -webkit-font-smoothing: antialiased;
+        
     line-height: 1.5;
     font-size: 1rem;
-    font-family: var(--font-family);
-    -webkit-font-smoothing: antialiased;
-    /* for MACs */
 }
 
 input,
@@ -151,3 +153,20 @@ em {}
 
 strong {} 
 */
+
+/*  -----------------------------------
+        Utility classes [#UTIL]        
+-----------------------------------  */
+
+/* To hide something, but not to screen readers */
+
+.visuallyHidden{
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
